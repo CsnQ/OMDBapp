@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,KAAK,EAAE,GAAG;CACb",
+    "mappings": "ACEA,AAAA,EAAE,CAAA;EACE,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,aAAa;EACrB,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB;;ADbD,AAAA,EAAE,CAAA;EACE,KAAK,EAAE,GAAG;CACb",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "partials/_movie-grid.scss"
     ],
     "names": [],
     "file": "main.css"

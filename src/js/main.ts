@@ -1,8 +1,7 @@
-import { helloWorld,buildList} from './renderHTML/render-html';
+import { helloWorld,buildList, buildCard} from './renderHTML/render-html';
 
-helloWorld();
-
-const url = "http://www.omdbapi.com/?s=paris&apikey=831d3029"
+const searchTerm = "lord"
+const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=831d3029`
 
 fetch(url)
 //fetches the data 
@@ -10,7 +9,7 @@ fetch(url)
 //now you have the data 
 .then((data) => {
     console.log(data)
-    return buildList(data);
+    return buildCard(data);
    
 
   

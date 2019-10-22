@@ -3,3 +3,14 @@
 li{
     color: blue;
 }
+
+.movie-container{
+    border: 2px solid red;
+    width: 100vw;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
