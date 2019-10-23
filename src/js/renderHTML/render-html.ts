@@ -25,3 +25,8 @@ export const buildCard = (data) => {
         section.innerHTML += card.html;
     })
 }
+
+export const buildFilter = (distinctListOfYears) => {
+    console.log(distinctListOfYears);
+
+}

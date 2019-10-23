@@ -1,4 +1,4 @@
-import {buildCard} from '../renderHTML/render-html'
+import {buildCard, buildFilter} from '../renderHTML/render-html'
 
 export const searchForFilm = (userSearchData = 'blade')=> {
 
@@ -23,8 +23,7 @@ export const buildListOfYears = (movieList) => {
     const listOfYears = movieList.map(film => film.Year);
     listOfYears.sort();
     let distinctListOfYears = [...new Set(listOfYears)]
-    console.log(listOfYears);
-    console.log(distinctListOfYears);
+    buildFilter(distinctListOfYears);
     return distinctListOfYears;
 }
 
