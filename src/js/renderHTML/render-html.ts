@@ -28,5 +28,10 @@ export const buildCard = (data) => {
 
 export const buildFilter = (distinctListOfYears) => {
     console.log(distinctListOfYears);
-
+    const filter = document.getElementsByClassName('year-filter')[0];
+    filter.innerHTML = "";
+    distinctListOfYears.forEach(year => {
+        let yearOption = `<a class="dropdown-item ${year}" href="#">${year}</a>`
+        filter.innerHTML+= yearOption;
+    })
 }
