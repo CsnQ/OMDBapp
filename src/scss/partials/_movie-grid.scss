@@ -1,12 +1,11 @@
 
-
-li{
-    color: blue;
+body{
+    background: black;
 }
 
 .movie-container{
-    border: 2px solid red;
     width: 100vw;
+    background: black;
 }
 
 .card-img-top {
@@ -14,3 +13,4 @@ li{
     height: 50vh;
     object-fit: cover;
 }
+

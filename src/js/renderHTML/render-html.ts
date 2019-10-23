@@ -15,7 +15,8 @@ export const buildList = (data) => {
 
 export const buildCard = (data) => {
     const section = document.getElementsByClassName('movie-container')[0];
-    section.innerHTML="";
+    //clear the page of current results
+    section.innerHTML = "";
     data.Search.forEach(film => {
         section.innerHTML += `
             <div class="col-md-2 col-lg-3 m-2">
