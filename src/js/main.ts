@@ -1,10 +1,9 @@
-import { helloWorld,buildList, buildCard} from './renderHTML/render-html';
+
 import { searchForFilm } from './userSearch/userSearch';
 
 searchForFilm();
 
 const movieSearch = document.getElementById("search-bar");
-
 movieSearch.addEventListener("keydown", function(event) {
 
     if (event.key === "Enter") {

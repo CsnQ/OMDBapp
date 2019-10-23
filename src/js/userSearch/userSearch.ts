@@ -10,10 +10,21 @@ export const searchForFilm = (userSearchData = 'blade')=> {
     .then((response)=> response.json())
     //now you have the data 
     .then((data) => {
-    console.log(data)
-    return buildCard(data);  
+        console.log(data)
+        buildListOfYears(data.Search);
+        return buildCard(data);  
     })
     .catch((error) => {
-    throw new Error(error);
+        throw new Error(error);
     });
 }
+
+export const buildListOfYears = (movieList) => {
+    const listOfYears = movieList.map(film => film.Year);
+    listOfYears.sort();
+    let distinctListOfYears = [...new Set(listOfYears)]
+    console.log(listOfYears);
+    console.log(distinctListOfYears);
+    return distinctListOfYears;
+}
+
