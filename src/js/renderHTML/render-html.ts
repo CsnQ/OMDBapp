@@ -4,9 +4,9 @@ class Card {
 
     constructor(film) {
         this.html = `
-        <div class="col-md-2 col-lg-3 m-2">
-            <div class="card h-100" style="width: 18rem;">
-                <img src=${film.Poster} class="card-img-top" alt="...">
+        <div class="col-md-4 col-lg-3 m-2 ${film.Year} film-card rounded-0 border-0">
+            <div class="card h-100 rounded-0 border-0" style="width: 16rem;">
+                <img src=${film.Poster} class="card-img-top rounded-0 border-0" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${film.Title}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${film.Year}</h6>
@@ -31,7 +31,7 @@ export const buildFilter = (distinctListOfYears) => {
     const filter = document.getElementsByClassName('year-filter')[0];
     filter.innerHTML = "";
     distinctListOfYears.forEach(year => {
-        let yearOption = `<a class="dropdown-item ${year}" href="#">${year}</a>`
+        let yearOption = `<a class="dropdown-item ${year} year-option" href="#">${year}</a>`
         filter.innerHTML+= yearOption;
     })
 }

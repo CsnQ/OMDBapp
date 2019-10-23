@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap"
       rel="stylesheet"
@@ -26,34 +27,31 @@
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Movie Search</a>
+      <h1 class="navbar-brand display-2 ml-2" href="#">Movie Search <p class ="subtitle">(built with the omdb api)</p></h1>
       <form class="form-inline">
         <input
           id="search-bar"
-          class="form-control form-control-sm ml-3 w-75"
+          class="form-control form-control-m mr-2"
           type="text"
           placeholder="search film title"
           aria-label="Search"
         />
       </form>
       <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
+            <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter by year
             </button>
-            <div class="dropdown-menu year-filter" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-menu year-filter" aria-labelledby="dropdownMenuButton" id="year-filter">
             </div>
         </div>
     </nav>
-    <section class="intro">
+    <section class="intro text-center">
       <p>
-        Welcome to the movie search page. Search for a film by title in the top
-        right
+        Welcome to the movie search page. Search for a film by title in the nav bar
       </p>
     </section>
     <section class="movie-container row d-flex justify-content-center">
     </section>
   </body>
+  
 </html>

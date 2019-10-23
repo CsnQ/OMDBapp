@@ -14,5 +14,15 @@ movieSearch.addEventListener("keydown", function(event) {
     }
 });
 
+const getFilter = () =>{
+  const filterByYear: HTMLCollection = document.getElementsByClassName("year-option");
+
+  console.log(filterByYear);
+  console.log(filterByYear[0]);
+  console.log (typeof filterByYear);
+}
+getFilter();
+
+
 
 
