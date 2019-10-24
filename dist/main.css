@@ -10,11 +10,11 @@ body {
   height: 50vh;
   object-fit: cover; }
 
-.hide {
-  display: none; }
-
 .film-card {
   border-color: red; }
+
+.hide {
+  display: none; }
 
 .intro {
   color: whitesmoke;
@@ -29,9 +29,6 @@ body {
 
 #search-bar {
   width: 250px !important; }
-
-.dropdown {
-  display: none; }
 
 h3 {
   color: red; }

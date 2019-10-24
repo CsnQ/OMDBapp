@@ -1,4 +1,5 @@
 
+
 class Card {
     html: string;
 
@@ -30,8 +31,39 @@ export const buildFilter = (distinctListOfYears) => {
     console.log(distinctListOfYears);
     const filter = document.getElementsByClassName('year-filter')[0];
     filter.innerHTML = "";
+    const filterReset = `<a class="dropdown-item reset-filter year-option" href="#">All</a>`
+    filter.innerHTML += filterReset;
     distinctListOfYears.forEach(year => {
         let yearOption = `<a class="dropdown-item ${year} year-option" href="#">${year}</a>`
-        filter.innerHTML+= yearOption;
+        filter.innerHTML += yearOption;
     })
+
+}
+
+const resetFilter = () =>{
+    const cards = [...document.getElementsByClassName('film-card')];
+    cards.forEach(card => {
+        let value = card as HTMLElement;
+        value.classList.remove("hide");
+        
+    });
+}
+
+export const showMoviesByYear = (year) => {
+    resetFilter();
+    const valueSelected = year;
+    const cards = [...document.getElementsByClassName('film-card')];
+    if (valueSelected === 'reset-filter') {
+       resetFilter();
+    } else {
+        cards.forEach(card => {
+            let value = card as HTMLElement;
+            if (value.classList[3]!==valueSelected){
+            value.className += " " + "hide";
+            }       
+
+        });
+    }
+
+
 }
