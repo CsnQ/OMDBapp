@@ -1,6 +1,6 @@
 # Movie Search (APIs)
 
-##About this project 
+## About this project 
 For this project we interacted with the OMDB API to create a dynamic webpage that will display Films based on a title that the user searches for. Currently, this page allows searching and filtering of the results. 
 
 ## What is the OMDB API?
